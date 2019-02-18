@@ -6,7 +6,7 @@ Cambio del color de fondo al dar clic dentro del área de un cuadrado
 let r, g, b;
 
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(400, 400);
   // colores aleatorios
   r = random(255);
   g = random(255);
