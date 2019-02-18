@@ -1,7 +1,6 @@
 # 1-febrero
 Cambio del color de fondo al dar clic dentro del área de un cuadrado
 
-
 // variables para los valores de rojo, verde y azul (r, g, b)
 let r, g, b;
 
@@ -18,18 +17,19 @@ function draw() {
   // dibujar el círculo
   strokeWeight(2);
   stroke(r, g, b);
-  fill(r, g, b, 127);
-  rect(260, 100, 200, 200);
+  fill(r, g, b, 190);
+  rect(100, 100, 200, 200);
 }
 
 // cuando el usuario hace click
 function mousePressed() {
   // revisar si el ratón está dentro del círculo
   let d = dist(mouseX, mouseY, 360, 200);
-  if (d < 100) {
+  if (d < 230) {
     // escoger nuevos colores aleatorios
-    r = random(0,255,0);
-    g = random(0,0,255);
+    r = random(255,0,0);
+    g = random(0,255,255);
     b = random(255,0,0);
   }
 }
+
